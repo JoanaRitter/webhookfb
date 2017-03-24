@@ -11,7 +11,7 @@ app.use(bodyParser.json())
 var conversation_id = "";
 var w_conversation = watson.conversation({
     url: 'https://gateway.watsonplatform.net/conversation/api',
-    username: process.env.CONVERSATION_USERNAME || 'paste conversation api username here',
+    username: process.env.CONVERSATION_USERNAME || 'paste conversation api username',
     password: process.env.CONVERSATION_PASSWORD || 'paste conversation api password here',
     version: 'v1',
     version_date: '2016-07-11'
